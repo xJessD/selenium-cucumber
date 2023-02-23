@@ -36,3 +36,6 @@ where only a .file type was created, rather than the HTML report. So this has be
 ```
 html:target/cucumber-report/cucumber.html
 ```
+
+#### Driver.get() vs Driver.naviagte().to()
+While both do essentially the same thing, `navigate().to()` navigates to the URL via forward / backwards navigation. `get()` does this by refreshing. Using `navigate()` we can keep the browser history. while we lost this with `get()`.
